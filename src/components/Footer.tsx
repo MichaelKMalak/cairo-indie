@@ -1,3 +1,4 @@
+
 import { Separator } from "@/components/ui/separator";
 import { Film } from "lucide-react";
 const Footer = () => {
@@ -5,7 +6,11 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <Film className="h-6 w-6 text-[#f52e38]" />
+            <img 
+              src="/lovable-uploads/6f29a59c-5fe9-4f3a-8be2-c998da16ea4b.png" 
+              alt="CIFC Logo" 
+              className="h-6 w-6"
+            />
             <span className="text-xl font-gunterz font-bold tracking-tight">CIFC</span>
           </div>
           <div className="flex gap-6">
