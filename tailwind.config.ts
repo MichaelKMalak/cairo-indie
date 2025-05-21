@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				archivoblack: ['"Archivo Black"', 'sans-serif'],
+				gunterz: ['Gunterz', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			colors: {

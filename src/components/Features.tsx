@@ -29,7 +29,7 @@ const Features = () => {
   return (
     <section id="features" className="py-16 container bg-gradient-to-b from-white to-[#cef2e7]/30">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-archivoblack font-bold mb-4 text-[#390c86]">Why Join Our Club</h2>
+        <h2 className="text-3xl font-gunterz font-bold mb-4 text-[#390c86]">Why Join Our Club</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Break through your creative blocks and finally make the films you've been dreaming of.
         </p>
@@ -40,7 +40,7 @@ const Features = () => {
           <Card key={index} className="border border-[#cef2e7] transition-all hover:shadow-md bg-white">
             <CardHeader className="pb-2">
               <feature.icon className="h-8 w-8 mb-2 text-[#f52e38]" />
-              <CardTitle className="text-[#390c86] font-archivoblack">{feature.title}</CardTitle>
+              <CardTitle className="text-[#390c86] font-gunterz">{feature.title}</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-foreground/80">{feature.description}</CardDescription>
