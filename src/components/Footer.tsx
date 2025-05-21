@@ -4,7 +4,7 @@ import { Film } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#390c86] text-white py-10 mt-auto font-tuppence">
+    <footer className="bg-[#390c86] text-white py-10 mt-auto font-montserrat">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
