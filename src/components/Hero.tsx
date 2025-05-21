@@ -17,14 +17,23 @@ const Hero = () => {
           Learn by doing, not by attending 100s of workshops.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button size="lg" onClick={() => document.getElementById('apply')?.scrollIntoView({
-          behavior: 'smooth'
-        })} className="font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-[#390c86]">
+          <Button 
+            size="lg" 
+            onClick={() => document.getElementById('apply')?.scrollIntoView({
+              behavior: 'smooth'
+            })} 
+            className="font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-[#390c86]"
+          >
             Join the Challenge
           </Button>
-          <Button size="lg" variant="outline" className="border-[#390c86] text-[#390c86] font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1" onClick={() => document.getElementById('rules')?.scrollIntoView({
-          behavior: 'smooth'
-        })}>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-[#390c86] text-[#390c86] font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1" 
+            onClick={() => document.getElementById('rules')?.scrollIntoView({
+              behavior: 'smooth'
+            })}
+          >
             Learn More
           </Button>
         </div>
@@ -39,4 +48,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;
