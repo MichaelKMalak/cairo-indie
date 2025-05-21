@@ -6,7 +6,7 @@ const Hero = () => {
           <img src="/lovable-uploads/86650fe7-49b3-40d3-8506-2586b2de46ff.png" alt="Cairo Indie Filmmakers Club Logo" className="w-full max-w-44 mx-auto mb-5 object-contain" />
         </div>
         
-        <h2 className="text-xl md:text-2xl font-gunterz font-bold mb-6 text-[#390c86]">
+        <h2 className="text-xl md:text-2xl font-gunterz mb-6 text-[#390c86] font-semibold">
           Make One Film / Month Commitment Challenge
         </h2>
         <p className="text-xl mb-10 leading-relaxed text-slate-100 font-montserrat">
