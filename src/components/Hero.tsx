@@ -57,8 +57,7 @@ const Hero = () => {
             WebkitFontSmoothing: "antialiased",
             MozOsxFontSmoothing: "grayscale",
             fontSynthesis: "none",
-            letterSpacing: "-0.015em",
-            fontDisplay: "swap"
+            letterSpacing: "-0.015em"
           }}
         >
           Make One Film / Month Commitment Challenge
