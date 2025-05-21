@@ -1,9 +1,6 @@
-
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-
 const Rules = () => {
-  return (
-    <section id="rules" className="py-16 bg-[#390c86]/5">
+  return <section id="rules" className="py-16 bg-[#f52e38]">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-gunterz font-bold mb-4 text-[#390c86]">Club Rules</h2>
@@ -51,8 +48,6 @@ const Rules = () => {
           </Alert>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Rules;
