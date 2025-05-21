@@ -1,15 +1,12 @@
-
 import { Separator } from "@/components/ui/separator";
 import { Film } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-[#390c86] text-white py-10 mt-auto font-montserrat">
+  return <footer className="bg-[#390c86] text-white py-10 mt-auto font-montserrat">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Film className="h-6 w-6 text-[#f52e38]" />
-            <span className="text-xl font-gunterz font-bold tracking-tight">CairoIndie FC</span>
+            <span className="text-xl font-gunterz font-bold tracking-tight">CIFC</span>
           </div>
           <div className="flex gap-6">
             <a href="#about" className="hover:text-[#cef2e7] transition">About</a>
@@ -56,8 +53,6 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Cairo Indie Filmmakers Club. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
