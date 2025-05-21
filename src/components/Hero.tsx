@@ -1,9 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 const Hero = () => {
   return <section className="py-20 md:py-28 container">
       <div className="max-w-3xl mx-auto text-center animate-fade-in">
         <div className="flex justify-center mb-6">
-          <img src="/lovable-uploads/86650fe7-49b3-40d3-8506-2586b2de46ff.png" alt="Cairo Indie Filmmakers Club Logo" className="w-full max-w-md mx-auto mb-6 object-contain" />
+          <img src="/lovable-uploads/86650fe7-49b3-40d3-8506-2586b2de46ff.png" alt="Cairo Indie Filmmakers Club Logo" className="w-full max-w-xs mx-auto mb-6 object-contain" />
         </div>
         
         <h2 className="text-xl md:text-2xl font-gunterz font-bold mb-6 text-[#390c86]">
