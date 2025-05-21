@@ -1,7 +1,7 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +39,25 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Custom Cairo Indie FC colors */
+.bg-cairo-red {
+  background-color: #f52e38;
+}
+
+.bg-cairo-purple {
+  background-color: #390c86;
+}
+
+.bg-cairo-mint {
+  background-color: #cef2e7;
+}
+
+.text-cairo-red {
+  color: #f52e38;
+}
+
+.text-cairo-purple {
+  color: #390c86;
 }

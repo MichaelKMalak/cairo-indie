@@ -10,8 +10,12 @@ import CTA from "../components/CTA";
 const Index = () => {
   return (
     <Layout>
-      <Hero />
-      <Features />
+      <div className="bg-[#f52e38]">
+        <Hero />
+      </div>
+      <div className="bg-[#cef2e7]">
+        <Features />
+      </div>
       <About />
       <Rules />
       <Apply />
