@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="py-16 container">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-3xl font-bebasneue font-bold mb-6 text-[#390c86]">About Us</h2>
+          <h2 className="text-3xl font-archivoblack font-bold mb-6 text-[#390c86]">About Us</h2>
           <p className="mb-4 text-lg">
             Cairo Indie FC is a club that will push you to finally make films consistently! 
             We will be your "big brother" watching you and trying to bully you into making your films.
@@ -23,7 +23,7 @@ const About = () => {
         </div>
         
         <div>
-          <h2 className="text-3xl font-bebasneue font-bold mb-6 text-[#f52e38]">Why & Who We Are</h2>
+          <h2 className="text-3xl font-archivoblack font-bold mb-6 text-[#f52e38]">Why & Who We Are</h2>
           <Card className="bg-[#cef2e7]/20 border-[#cef2e7]">
             <CardContent className="pt-6">
               <p className="mb-4">

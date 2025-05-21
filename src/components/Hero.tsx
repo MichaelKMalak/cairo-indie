@@ -7,7 +7,7 @@ const Hero = () => {
           <img src="/lovable-uploads/86650fe7-49b3-40d3-8506-2586b2de46ff.png" alt="Cairo Indie Filmmakers Club Logo" className="w-full max-w-44 mx-auto mb-5 object-contain" />
         </div>
         
-        <h2 className="text-xl font-bebasneue mb-6 text-[#390c86] md:text-2xl font-bold">
+        <h2 className="text-xl font-archivoblack mb-6 text-[#390c86] md:text-2xl font-bold">
           Make One Film / Month Commitment Challenge
         </h2>
         <p className="text-xl mb-10 leading-relaxed text-slate-100 font-montserrat">
@@ -17,10 +17,10 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg" onClick={() => document.getElementById('apply')?.scrollIntoView({
           behavior: 'smooth'
-        })} className="font-bebasneue font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-[#390c86]">
+        })} className="font-archivoblack font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-[#390c86]">
             Join the Challenge
           </Button>
-          <Button size="lg" variant="outline" className="border-[#390c86] text-[#390c86] font-bebasneue font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1" onClick={() => document.getElementById('rules')?.scrollIntoView({
+          <Button size="lg" variant="outline" className="border-[#390c86] text-[#390c86] font-archivoblack font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1" onClick={() => document.getElementById('rules')?.scrollIntoView({
           behavior: 'smooth'
         })}>
             Learn More

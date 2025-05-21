@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				bebasneue: ['"Bebas Neue"', 'sans-serif'],
+				archivoblack: ['"Archivo Black"', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			colors: {

@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -83,7 +82,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
   }
 }
 
@@ -94,7 +93,7 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue', sans-serif !important;
+    font-family: 'Archivo Black', sans-serif !important;
   }
 }
 
@@ -133,6 +132,6 @@
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
-.font-bebasneue {
-  font-family: 'Bebas Neue', sans-serif !important;
+.font-archivoblack {
+  font-family: 'Archivo Black', sans-serif !important;
 }

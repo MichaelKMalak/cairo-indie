@@ -8,7 +8,7 @@ const Apply = () => {
     <section id="apply" className="py-16 container">
       <div className="max-w-xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bebasneue font-bold mb-4 text-[#390c86]">Who Can Apply</h2>
+          <h2 className="text-3xl font-archivoblack font-bold mb-4 text-[#390c86]">Who Can Apply</h2>
           <p className="text-muted-foreground">
             Do you have a camera? If not, do you have a smartphone? If not, maybe you shouldn't apply.
             If you can take your camera and shoot a story, then you're good.
@@ -53,7 +53,7 @@ const Apply = () => {
             </textarea>
           </div>
           
-          <Button type="submit" className="w-full bg-[#f52e38] hover:bg-[#f52e38]/90 font-bebasneue">
+          <Button type="submit" className="w-full bg-[#f52e38] hover:bg-[#f52e38]/90 font-archivoblack">
             Submit Application
           </Button>
         </form>
