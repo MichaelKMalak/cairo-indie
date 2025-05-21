@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 const Hero = () => {
   return <section className="py-20 md:py-28 container">
@@ -6,10 +5,7 @@ const Hero = () => {
         <div className="flex justify-center mb-6">
           <img src="/lovable-uploads/20cf390a-1ca8-420c-8bdc-d9106d86669f.png" alt="Cairo Indie Filmmakers Club Logo" className="w-full max-w-md mx-auto mb-6" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-gunterz font-bold tracking-tight mb-2">
-          <span className="text-[#390c86]">Cairo</span>
-          <span className="text-[#f52e38]">Indie</span> Filmmakers
-        </h1>
+        
         <h2 className="text-xl md:text-2xl font-gunterz font-bold mb-6 text-[#390c86]">
           Make One Film / Month Commitment Challenge
         </h2>
