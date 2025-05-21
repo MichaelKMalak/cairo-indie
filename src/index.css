@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -88,46 +87,111 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
+    letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
 }
 
-/* Enhanced mobile specific font settings with higher specificity */
+/* Enhanced mobile-first font handling */
+.font-gunterz {
+  font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-synthesis: none;
+  font-feature-settings: "kern", "liga", "calt";
+  font-display: swap;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mobile-specific font optimizations with higher specificity */
 @media screen and (max-width: 767px) {
-  html body {
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    -webkit-text-size-adjust: 100%;
-  }
-  
-  html h1,
-  html h2,
-  html h3,
-  html h4,
-  html h5,
-  html h6,
-  html .font-gunterz {
+  html body .font-gunterz,
+  html body h1,
+  html body h2, 
+  html body h3,
+  html body h4,
+  html body h5,
+  html body h6,
+  html body [class*="font-gunterz"] {
     font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
-    font-display: swap;
-    font-weight: 700;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-synthesis: none; /* Prevent synthetic bold/italic */
+    font-weight: 700 !important;
+    letter-spacing: -0.015em;
+    font-synthesis: none;
+    font-display: block;
+    text-rendering: optimizeLegibility;
     font-feature-settings: "kern", "liga", "calt";
-    letter-spacing: -0.01em; /* Slight adjustment for better readability on mobile */
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
   
-  /* Fallback for devices where Gunterz fails to load */
-  html.no-gunterz h1,
-  html.no-gunterz h2,
-  html.no-gunterz h3,
-  html.no-gunterz h4,
-  html.no-gunterz h5,
-  html.no-gunterz h6,
-  html.no-gunterz .font-gunterz {
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
+  /* Force hardware acceleration for better rendering */
+  .mobile-font-fix {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    will-change: opacity;
   }
+  
+  /* iOS-specific font adjustments */
+  @supports (-webkit-touch-callout: none) {
+    html body .font-gunterz,
+    html body h1,
+    html body h2, 
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
+      letter-spacing: -0.025em;
+      font-weight: 700 !important;
+    }
+  }
+}
+
+/* Fallback styles for when Gunterz fails to load */
+.no-gunterz .font-gunterz,
+.no-gunterz h1,
+.no-gunterz h2,
+.no-gunterz h3,
+.no-gunterz h4,
+.no-gunterz h5,
+.no-gunterz h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-weight: 700;
+}
+
+/* Font loading transition */
+.fonts-loading h1,
+.fonts-loading h2,
+.fonts-loading h3,
+.fonts-loading h4,
+.fonts-loading h5,
+.fonts-loading h6,
+.fonts-loading .font-gunterz {
+  opacity: 0;
+}
+
+.fonts-loaded h1,
+.fonts-loaded h2,
+.fonts-loaded h3,
+.fonts-loaded h4,
+.fonts-loaded h5,
+.fonts-loaded h6,
+.fonts-loaded .font-gunterz {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
 }
 
 /* Custom animation for film reel effect */
@@ -157,41 +221,4 @@
 
 .text-gradient {
   @apply bg-gradient-to-r from-[#390c86] via-[#f52e38] to-[#cef2e7] bg-clip-text text-transparent;
-}
-
-/* Enhanced font classes with optimizations */
-.font-montserrat {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-.font-gunterz {
-  font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-display: swap;
-  font-synthesis: none;
-  font-feature-settings: "kern", "liga", "calt";
-}
-
-/* Special iOS font rendering fix */
-@supports (-webkit-touch-callout: none) {
-  .font-gunterz {
-    /* iOS-specific font adjustments */
-    letter-spacing: -0.02em;
-    font-weight: 700;
-  }
-}
-
-/* Android specific adjustments */
-@supports not (-webkit-touch-callout: none) {
-  @media screen and (max-width: 767px) {
-    .font-gunterz {
-      /* Android specific adjustments if needed */
-      letter-spacing: -0.005em;
-    }
-  }
 }

@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <title>Cairo Indie Filmmakers Club</title>
     <meta name="description" content="A community of indie filmmakers in Cairo committed to making one film per month." />
     <meta name="author" content="Cairo Indie FC" />
@@ -20,64 +20,92 @@
     <!-- Favicon -->
     <link rel="icon" href="/lovable-uploads/a2433e87-1b67-47e3-a746-89249d3eb64e.png" type="image/png">
     
-    <!-- Preload critical fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Gunterz:wght@400;500;600;700&display=swap" as="style" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" as="style" />
+    <!-- Critical DNS prefetch and preconnect for fast font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Gunterz font with display swap -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gunterz:wght@400;500;600;700&display=swap">
-    <!-- Montserrat font with display swap -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
-    
-    <!-- Fallback font styles for mobile -->
+    <!-- Local Gunterz font files with font-display: swap -->
     <style>
-      /* Ensure font-display is applied even if Google's CSS is delayed */
       @font-face {
         font-family: 'Gunterz';
         font-style: normal;
-        font-weight: 400 700;
+        font-weight: 700;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/gunterz/v1/a8Sw92fu4cxPpPKS2yfB-YCH0Jmx7A.woff2) format('woff2');
+        src: local('Gunterz Bold'), 
+             url('/fonts/gunterz/Gunterz-Bold.woff2') format('woff2'),
+             url('https://fonts.gstatic.com/s/gunterz/v1/a8Sw92fu4cxPpPKS2yfB-YCH0Jmx7A.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
       
-      /* Force Gunterz to load properly on mobile */
-      .font-gunterz {
-        font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeLegibility;
+      @font-face {
+        font-family: 'Gunterz';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Gunterz Regular'), 
+             url('/fonts/gunterz/Gunterz-Regular.woff2') format('woff2'),
+             url('https://fonts.gstatic.com/s/gunterz/v1/a8Sw92fu4cxPpPKS2yfB-YCH0Jmx7A.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      
+      /* FOIT prevention */
+      .fonts-loading {
+        visibility: hidden;
+      }
+      
+      /* Font loading fallback */
+      .no-gunterz h1,
+      .no-gunterz h2,
+      .no-gunterz h3,
+      .no-gunterz h4,
+      .no-gunterz h5,
+      .no-gunterz h6,
+      .no-gunterz .font-gunterz {
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
       }
     </style>
     
-    <!-- Font loading diagnostic script -->
+    <!-- Fallback Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Gunterz:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Enhanced font loading script -->
     <script>
+      // Add class to prevent FOIT (Flash of Invisible Text)
+      document.documentElement.classList.add('fonts-loading');
+      
+      // Font loading detector
       document.addEventListener('DOMContentLoaded', function() {
-        // Check if fonts are loaded
-        document.fonts.ready.then(function() {
-          if (document.fonts.check('1em Montserrat')) {
-            console.log('Montserrat font loaded successfully');
-          } else {
-            console.warn('Montserrat font not loaded');
-          }
-          
-          if (document.fonts.check('1em Gunterz')) {
-            console.log('Gunterz font loaded successfully');
-          } else {
-            console.warn('Gunterz font not loaded');
-            // Apply fallback class to document if Gunterz fails to load
-            document.documentElement.classList.add('no-gunterz');
-          }
+        // Create font test elements
+        const gunterz = new FontFace('Gunterz', 'url(/fonts/gunterz/Gunterz-Bold.woff2)', {
+          weight: '700',
+          display: 'swap'
         });
         
-        // Set timeout to check font loading status after 2 seconds
+        // Load fonts and mark as ready when done
+        Promise.all([
+          gunterz.load().then(() => document.fonts.add(gunterz)),
+          document.fonts.ready
+        ])
+        .then(() => {
+          document.documentElement.classList.remove('fonts-loading');
+          document.documentElement.classList.add('fonts-loaded');
+          console.log('All fonts loaded and applied');
+        })
+        .catch(() => {
+          // Add fallback class if loading fails
+          document.documentElement.classList.remove('fonts-loading');
+          document.documentElement.classList.add('no-gunterz');
+          console.warn('Font loading failed, using fallbacks');
+        });
+        
+        // Mobile-specific font debugging
         setTimeout(function() {
-          console.log('Font loading status check:');
-          console.log('Montserrat loaded:', document.fonts.check('1em Montserrat'));
-          console.log('Gunterz loaded:', document.fonts.check('1em Gunterz'));
-          
-          // Log user agent for debugging on mobile
-          console.log('User agent:', navigator.userAgent);
-        }, 2000);
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          console.log('Is mobile device:', isMobile);
+          console.log('Gunterz font loaded:', document.fonts.check('700 1em Gunterz'));
+          console.log('Montserrat font loaded:', document.fonts.check('400 1em Montserrat'));
+        }, 1000);
       });
     </script>
   </head>
