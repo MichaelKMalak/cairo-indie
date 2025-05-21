@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				gunterz: ['Gunterz', 'serif'],
+				tuppence: ['Tuppence', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

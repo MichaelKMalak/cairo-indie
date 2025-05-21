@@ -9,12 +9,12 @@ const Navbar = () => {
           <span className="text-xl font-gunterz font-bold tracking-tight text-white">CairoIndie FC</span>
         </div>
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" className="text-white hover:bg-[#f52e38]/80">About</Button>
-          <Button variant="ghost" className="text-white hover:bg-[#f52e38]/80">Challenge</Button>
-          <Button variant="ghost" className="text-white hover:bg-[#f52e38]/80">Rules</Button>
-          <Button className="bg-[#390c86] hover:bg-[#390c86]/90 text-white">Join Club</Button>
+          <Button variant="ghost" className="text-white hover:bg-[#f52e38]/80 font-tuppence">About</Button>
+          <Button variant="ghost" className="text-white hover:bg-[#f52e38]/80 font-tuppence">Challenge</Button>
+          <Button variant="ghost" className="text-white hover:bg-[#f52e38]/80 font-tuppence">Rules</Button>
+          <Button className="bg-[#390c86] hover:bg-[#390c86]/90 text-white font-tuppence">Join Club</Button>
         </div>
-        <Button className="md:hidden bg-[#390c86] hover:bg-[#390c86]/90 text-white">Join</Button>
+        <Button className="md:hidden bg-[#390c86] hover:bg-[#390c86]/90 text-white font-tuppence">Join</Button>
       </div>
     </nav>
   );
