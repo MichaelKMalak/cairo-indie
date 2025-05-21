@@ -12,11 +12,11 @@ const Hero = () => {
             className="h-24 md:h-32 w-auto"
           />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
+        <h1 className="text-4xl md:text-5xl font-gunterz font-bold tracking-tight mb-2">
           <span className="text-[#390c86]">Cairo</span>
           <span className="text-[#f52e38]">Indie</span> Filmmakers
         </h1>
-        <h2 className="text-xl md:text-2xl font-bold mb-6 text-[#390c86]">
+        <h2 className="text-xl md:text-2xl font-gunterz font-bold mb-6 text-[#390c86]">
           Make One Film / Month Commitment Challenge
         </h2>
         <p className="text-xl text-muted-foreground mb-10 leading-relaxed">

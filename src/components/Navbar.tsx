@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="border-b bg-[#f52e38] backdrop-blur supports-[backdrop-filter]:bg-[#f52e38]/95">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-tight text-white">CairoIndie FC</span>
+          <span className="text-xl font-gunterz font-bold tracking-tight text-white">CairoIndie FC</span>
         </div>
         <div className="hidden md:flex items-center gap-4">
           <Button variant="ghost" className="text-white hover:bg-[#f52e38]/80">About</Button>

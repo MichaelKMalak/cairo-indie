@@ -6,7 +6,7 @@ const CTA = () => {
     <section className="py-16 bg-[#390c86] text-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Start Creating?</h2>
+          <h2 className="text-3xl font-gunterz font-bold mb-4">Ready to Start Creating?</h2>
           <p className="mb-8 max-w-xl mx-auto opacity-90">
             Stop thinking about making films and actually make them. Join our community of indie filmmakers committed to creating one film per month.
           </p>
