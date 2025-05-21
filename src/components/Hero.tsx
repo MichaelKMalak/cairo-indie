@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center gap-4">
           <Button 
             size="lg" 
-            className="bg-[#f52e38] hover:bg-[#f52e38]/90 font-montserrat"
+            className="bg-[#f52e38] hover:bg-[#f52e38]/90 font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
             onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Join the Challenge
@@ -25,7 +25,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-[#390c86] text-[#390c86] font-montserrat"
+            className="border-[#390c86] text-[#390c86] font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
             onClick={() => document.getElementById('rules')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Learn More

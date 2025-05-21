@@ -16,7 +16,11 @@ const CTA = () => {
             </p>
             <p className="text-sm opacity-75 font-montserrat">The club for filmmakers who are ready to take action</p>
           </div>
-          <Button size="lg" className="bg-[#f52e38] hover:bg-[#f52e38]/80 text-white animate-pulse-soft font-montserrat">
+          <Button 
+            size="lg" 
+            className="bg-[#f52e38] hover:bg-[#f52e38]/90 text-white animate-pulse-soft font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Join the Challenge
           </Button>
         </div>
