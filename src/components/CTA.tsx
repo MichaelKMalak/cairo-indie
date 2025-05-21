@@ -6,7 +6,7 @@ const CTA = () => {
     <section className="py-16 bg-[#390c86] text-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-gunterz font-bold mb-4">Ready to Start Creating?</h2>
+          <h2 className="text-3xl font-bebasneue font-bold mb-4">Ready to Start Creating?</h2>
           <p className="mb-8 max-w-xl mx-auto opacity-90 font-montserrat">
             Stop thinking about making films and actually make them. Join our community of indie filmmakers committed to creating one film per month.
           </p>
@@ -18,7 +18,7 @@ const CTA = () => {
           </div>
           <Button 
             size="lg" 
-            className="bg-[#f52e38] hover:bg-[#f52e38]/90 text-white animate-pulse-soft font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            className="bg-[#f52e38] hover:bg-[#f52e38]/90 text-white animate-pulse-soft font-bebasneue font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
             onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Join the Challenge

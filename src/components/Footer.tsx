@@ -11,7 +11,7 @@ const Footer = () => {
               alt="CIFC Logo" 
               className="h-6 w-6"
             />
-            <span className="text-xl font-gunterz font-bold tracking-tight">CIFC</span>
+            <span className="text-xl font-bebasneue font-bold tracking-tight">CIFC</span>
           </div>
           <div className="flex gap-6">
             <a href="#about" className="hover:text-[#cef2e7] transition">About</a>
@@ -25,13 +25,13 @@ const Footer = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-gunterz">About</h3>
+            <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-bebasneue">About</h3>
             <p className="text-white/80 text-sm">
               A community for indie filmmakers in Cairo committed to creating films consistently.
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-gunterz">Contact</h3>
+            <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-bebasneue">Contact</h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
                 <a href="mailto:info@cairoindie.fc" className="hover:text-white transition">
@@ -46,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-gunterz">Join Us</h3>
+            <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-bebasneue">Join Us</h3>
             <p className="text-white/80 text-sm">
               Monthly meetups in Cairo.
               <br />
