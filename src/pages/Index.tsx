@@ -10,9 +10,7 @@ import CTA from "../components/CTA";
 const Index = () => {
   return (
     <Layout>
-      <div className="bg-[#f52e38] relative">
-        {/* Slightly darken the background to make grain more visible */}
-        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+      <div className="bg-[#f52e38]">
         <Hero />
       </div>
       <div className="bg-[#cef2e7]">
