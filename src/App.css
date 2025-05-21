@@ -61,3 +61,29 @@
 .text-cairo-purple {
   color: #390c86;
 }
+
+/* Mobile specific text rendering improvements */
+@media screen and (max-width: 767px) {
+  /* Critical text elements additional styling for mobile */
+  p, span, div, button, a {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Ensure minimum font size on mobile for readability */
+  body {
+    font-size: 16px !important;
+  }
+}
+
+/* Last resort system font fallback */
+.system-font-fallback {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
