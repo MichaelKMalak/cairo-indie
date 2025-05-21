@@ -30,14 +30,20 @@ const FilmGrainOverlay = ({ opacity = 0.05, speed = 0.8 }: FilmGrainOverlayProps
       p.draw = () => {
         p.clear();
         
-        // Draw grain effect
+        // Draw grain effect - improved algorithm for more visible grain
         grainCanvas.loadPixels();
         
-        for (let i = 0; i < grainCanvas.width; i += 3) {
-          for (let j = 0; j < grainCanvas.height; j += 3) {
-            const noiseValue = p.noise(i * 0.01, j * 0.01, p.frameCount * 0.01 * speed) * 255;
-            const grainValue = p.map(noiseValue, 0, 255, 0, opacity * 255);
+        // Use a smaller step size for more grain points
+        const stepSize = 2; // Reduced from 3 for more grain points
+        
+        for (let i = 0; i < grainCanvas.width; i += stepSize) {
+          for (let j = 0; j < grainCanvas.height; j += stepSize) {
+            // Using random instead of noise for more noticeable grain
+            const randomValue = p.random(255);
+            // Apply a threshold to create more contrast in the grain
+            const grainValue = randomValue > 200 ? opacity * 255 : 0;
             
+            // Set the grain pixel
             grainCanvas.set(i, j, p.color(255, grainValue));
           }
         }
