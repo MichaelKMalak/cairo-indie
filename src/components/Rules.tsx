@@ -4,7 +4,7 @@ const Rules = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-gunterz font-bold mb-4 text-[#390c86]">Club Rules</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto text-slate-100">
             The first rule of Cairo Indie FC is... well, there are actually several rules.
           </p>
         </div>
