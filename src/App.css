@@ -61,3 +61,34 @@
 .text-cairo-purple {
   color: #390c86;
 }
+
+/* Enhanced font styling for headings */
+h1.font-gunterz, 
+h2.font-gunterz, 
+h3.font-gunterz, 
+h4.font-gunterz, 
+h5.font-gunterz, 
+h6.font-gunterz {
+  font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
+  font-display: swap;
+  font-weight: 700;
+}
+
+/* Mobile optimizations */
+@media screen and (max-width: 767px) {
+  /* Force proper font rendering on mobile */
+  .mobile-font-fix {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Fix for font loading flash */
+.font-init {
+  opacity: 0;
+}
+
+.fonts-loaded .font-init {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
