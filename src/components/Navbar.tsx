@@ -6,11 +6,6 @@ const Navbar = () => {
     <nav className="border-b bg-[#f52e38] backdrop-blur supports-[backdrop-filter]:bg-[#f52e38]/95">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
-          <img 
-            src="/lovable-uploads/be67a5a6-cd97-48d5-871e-eefb0a358017.png" 
-            alt="Cairo Indie Filmmakers Club Logo" 
-            className="h-8 w-auto"
-          />
           <span className="text-xl font-bold tracking-tight text-white">CairoIndie FC</span>
         </div>
         <div className="hidden md:flex items-center gap-4">

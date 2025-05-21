@@ -5,6 +5,13 @@ const Hero = () => {
   return (
     <section className="py-20 md:py-28 container">
       <div className="max-w-3xl mx-auto text-center animate-fade-in">
+        <div className="flex justify-center mb-6">
+          <img 
+            src="/lovable-uploads/be67a5a6-cd97-48d5-871e-eefb0a358017.png" 
+            alt="Cairo Indie Filmmakers Club Logo" 
+            className="h-24 md:h-32 w-auto"
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
           <span className="text-[#390c86]">Cairo</span>
           <span className="text-[#f52e38]">Indie</span> Filmmakers
