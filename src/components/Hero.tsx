@@ -1,16 +1,9 @@
-
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
-  return (
-    <section className="py-20 md:py-28 container">
+  return <section className="py-20 md:py-28 container">
       <div className="max-w-3xl mx-auto text-center animate-fade-in">
         <div className="flex justify-center mb-6">
-          <img 
-            src="/lovable-uploads/be67a5a6-cd97-48d5-871e-eefb0a358017.png" 
-            alt="Cairo Indie Filmmakers Club Logo" 
-            className="h-24 md:h-32 w-auto"
-          />
+          <img src="/lovable-uploads/be67a5a6-cd97-48d5-871e-eefb0a358017.png" alt="Cairo Indie Filmmakers Club Logo" className="h-24 md:h-32 w-auto" />
         </div>
         <h1 className="text-4xl md:text-5xl font-gunterz font-bold tracking-tight mb-2">
           <span className="text-[#390c86]">Cairo</span>
@@ -19,7 +12,7 @@ const Hero = () => {
         <h2 className="text-xl md:text-2xl font-gunterz font-bold mb-6 text-[#390c86]">
           Make One Film / Month Commitment Challenge
         </h2>
-        <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
+        <p className="text-xl mb-10 leading-relaxed text-slate-100">
           We're the only club that will help you commit and finally make short indie films.
           Learn by doing, not by attending 100s of workshops.
         </p>
@@ -39,8 +32,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
