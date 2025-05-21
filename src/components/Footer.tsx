@@ -12,10 +12,10 @@ const Footer = () => {
             <span className="text-xl font-gunterz font-bold tracking-tight">CairoIndie FC</span>
           </div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-[#cef2e7] transition">About</a>
-            <a href="#" className="hover:text-[#cef2e7] transition">Challenge</a>
-            <a href="#" className="hover:text-[#cef2e7] transition">Rules</a>
-            <a href="#" className="hover:text-[#cef2e7] transition">Apply</a>
+            <a href="#about" className="hover:text-[#cef2e7] transition">About</a>
+            <a href="#features" className="hover:text-[#cef2e7] transition">Challenge</a>
+            <a href="#rules" className="hover:text-[#cef2e7] transition">Rules</a>
+            <a href="#apply" className="hover:text-[#cef2e7] transition">Apply</a>
           </div>
         </div>
         

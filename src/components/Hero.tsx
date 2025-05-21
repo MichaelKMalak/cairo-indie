@@ -15,10 +15,19 @@ const Hero = () => {
           Learn by doing, not by attending 100s of workshops.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button size="lg" className="bg-[#f52e38] hover:bg-[#f52e38]/90 font-montserrat">
+          <Button 
+            size="lg" 
+            className="bg-[#f52e38] hover:bg-[#f52e38]/90 font-montserrat"
+            onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Join the Challenge
           </Button>
-          <Button size="lg" variant="outline" className="border-[#390c86] text-[#390c86] font-montserrat">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-[#390c86] text-[#390c86] font-montserrat"
+            onClick={() => document.getElementById('rules')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Learn More
           </Button>
         </div>

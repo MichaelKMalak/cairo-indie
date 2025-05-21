@@ -27,7 +27,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-16 container bg-gradient-to-b from-white to-[#cef2e7]/30">
+    <section id="features" className="py-16 container bg-gradient-to-b from-white to-[#cef2e7]/30">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-gunterz font-bold mb-4 text-[#390c86]">Why Join Our Club</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">

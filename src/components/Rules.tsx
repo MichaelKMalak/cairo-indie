@@ -1,3 +1,4 @@
+
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 const Rules = () => {
   return <section id="rules" className="py-16 bg-[#f52e38]">
