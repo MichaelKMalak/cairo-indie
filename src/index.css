@@ -83,7 +83,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gunterz', sans-serif;
+    font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif;
   }
 }
 
@@ -94,11 +94,10 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gunterz', sans-serif !important;
+    font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
   }
 }
 
-/* Keep existing animations and custom styles */
 /* Custom animation for film reel effect */
 @keyframes filmReel {
   0% {
@@ -134,5 +133,5 @@
 }
 
 .font-gunterz {
-  font-family: 'Gunterz', sans-serif !important;
+  font-family: 'Gunterz', Georgia, 'Times New Roman', Times, serif !important;
 }

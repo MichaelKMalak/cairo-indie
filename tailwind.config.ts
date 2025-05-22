@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				gunterz: ['Gunterz', 'sans-serif'],
+				gunterz: ['Gunterz', 'serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			colors: {

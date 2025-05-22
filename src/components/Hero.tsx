@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 const Hero = () => {
   return <section className="py-20 md:py-28 container">
