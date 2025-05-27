@@ -20,6 +20,15 @@ const About = () => {
           <p className="text-sm italic text-muted-foreground">
             (*) Longer films that are over 15 minutes can take more than a month.
           </p>
+          
+          {/* Behind-the-scenes image */}
+          <div className="mt-8 animate-fade-in">
+            <img 
+              src="/lovable-uploads/20cf390a-1ca8-420c-8bdc-d9106d86669f.png" 
+              alt="Behind-the-scenes film production setup with monitor and equipment" 
+              className="w-full h-48 object-cover rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
         </div>
         
         <div>
@@ -43,6 +52,15 @@ const About = () => {
               </p>
             </CardContent>
           </Card>
+          
+          {/* Film set image */}
+          <div className="mt-8 animate-fade-in">
+            <img 
+              src="/lovable-uploads/be67a5a6-cd97-48d5-871e-eefb0a358017.png" 
+              alt="Professional film set with director's chairs and equipment" 
+              className="w-full h-48 object-cover rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
         </div>
       </div>
     </section>
