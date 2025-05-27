@@ -34,13 +34,13 @@ const Footer = () => {
             <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-gunterz">Contact</h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="mailto:info@cairoindie.fc" className="hover:text-white transition">
-                  info@cairoindie.fc
+                <a href="mailto:contact@cairoindie.com" className="hover:text-white transition">
+                  contact@cairoindie.com
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com/cairoindie.fc" className="hover:text-white transition">
-                  @cairoindie.fc
+                <a href="https://www.instagram.com/cairo.indiefilmmakers" className="hover:text-white transition">
+                  @cairo.indiefilmmakers
                 </a>
               </li>
             </ul>
