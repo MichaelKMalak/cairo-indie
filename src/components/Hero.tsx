@@ -6,7 +6,7 @@ const Hero = () => {
     <section 
       className="py-20 md:py-28 relative"
       style={{
-        backgroundImage: `url('/lovable-uploads/a71bf577-b572-448e-9498-4dc4adece1ac.png')`,
+        backgroundImage: `url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
