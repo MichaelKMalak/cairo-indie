@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section 
       id="about" 
-      className="py-16 container relative"
+      className="py-16 relative"
       style={{
         backgroundImage: `url('/lovable-uploads/7ca8bc6c-7aaa-4854-9a54-13e4a57a0230.png')`,
         backgroundSize: 'cover',
@@ -14,10 +14,10 @@ const About = () => {
       }}
     >
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/70 rounded-lg"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
       
       {/* Content with relative positioning to appear above overlay */}
-      <div className="relative z-10">
+      <div className="relative z-10 container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-gunterz font-bold mb-6 text-white">About Us</h2>
