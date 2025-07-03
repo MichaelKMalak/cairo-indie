@@ -1,7 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 const Apply = () => {
   return (
@@ -15,48 +13,24 @@ const Apply = () => {
           </p>
         </div>
         
-        <form className="space-y-6 p-6 border rounded-lg shadow-sm bg-white">
-          <div className="space-y-2">
-            <label htmlFor="name" className="block font-medium">Full Name</label>
-            <Input id="name" placeholder="Your name" />
-          </div>
+        <div className="text-center p-6 border rounded-lg shadow-sm bg-white">
+          <p className="mb-6 text-lg">
+            Ready to join the Cairo Indie Filmmakers Club? Fill out our application form to get started.
+          </p>
           
-          <div className="space-y-2">
-            <label htmlFor="email" className="block font-medium">Email Address</label>
-            <Input id="email" type="email" placeholder="your@email.com" />
-          </div>
-          
-          <div className="space-y-2">
-            <label className="block font-medium mb-2">Do you have equipment to shoot?</label>
-            <RadioGroup defaultValue="smartphone">
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="camera" id="camera" />
-                <label htmlFor="camera">I have a camera</label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="smartphone" id="smartphone" />
-                <label htmlFor="smartphone">I will use my smartphone</label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="other" id="other" />
-                <label htmlFor="other">I have other equipment</label>
-              </div>
-            </RadioGroup>
-          </div>
-          
-          <div className="space-y-2">
-            <label htmlFor="why" className="block font-medium">Why do you want to join?</label>
-            <textarea 
-              id="why" 
-              className="w-full p-2 border rounded-md min-h-[100px]" 
-              placeholder="Tell us why you want to join Cairo Indie FC...">
-            </textarea>
-          </div>
-          
-          <Button type="submit" className="w-full bg-[#f52e38] hover:bg-[#f52e38]/90 font-gunterz">
-            Submit Application
+          <Button 
+            asChild
+            className="w-full bg-[#f52e38] hover:bg-[#f52e38]/90 font-gunterz text-lg py-6"
+          >
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfxAaZcvsXKR8-wsrL2IUO27UWNGRxnF1MxWb88V4uRVxXBXg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply Now - Fill Out Form
+            </a>
           </Button>
-        </form>
+        </div>
       </div>
     </section>
   );
