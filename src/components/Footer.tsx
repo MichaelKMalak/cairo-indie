@@ -1,13 +1,12 @@
 
 import { Separator } from "@/components/ui/separator";
-import { Film } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-[#390c86] text-white py-10 mt-auto font-montserrat">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <img 
-              src="/lovable-uploads/6f29a59c-5fe9-4f3a-8be2-c998da16ea4b.png" 
+              src="/images/logo-footer.png" 
               alt="CIFC Logo" 
               className="h-6 w-6"
             />

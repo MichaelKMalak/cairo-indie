@@ -6,7 +6,7 @@ const Hero = () => {
     <section 
       className="py-20 md:py-28 relative"
       style={{
-        backgroundImage: `url('/lovable-uploads/1b0e3de5-f5c0-4a1f-9278-d8c974fc3d73.png')`,
+        backgroundImage: `url('/images/hero-bg.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="relative z-10 container">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
           <div className="flex justify-center mb-6">
-            <img src="/lovable-uploads/86650fe7-49b3-40d3-8506-2586b2de46ff.png" alt="Cairo Indie Filmmakers Club Logo" className="w-full max-w-44 mx-auto mb-5 object-contain" />
+            <img src="/images/logo.png" alt="Cairo Indie Filmmakers Club Logo" className="w-full max-w-44 mx-auto mb-5 object-contain" />
           </div>
           
           <h2 className="text-xl font-gunterz mb-6 text-[#390c86] md:text-2xl font-bold">
