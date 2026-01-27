@@ -23,7 +23,7 @@ const Apply = () => {
             className="w-full bg-[#f52e38] hover:bg-[#f52e38]/90 font-gunterz text-lg py-6"
           >
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfxAaZcvsXKR8-wsrL2IUO27UWNGRxnF1MxWb88V4uRVxXBXg/viewform"
+              href="https://forms.gle/CKv3xLR3ZjubuHdV6"
               target="_blank"
               rel="noopener noreferrer"
             >

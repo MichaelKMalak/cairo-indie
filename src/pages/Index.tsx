@@ -5,6 +5,7 @@ import Features from "../components/Features";
 import About from "../components/About";
 import Rules from "../components/Rules";
 import Apply from "../components/Apply";
+import Actors from "../components/Actors";
 import CTA from "../components/CTA";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <About />
       <Rules />
       <Apply />
+      <Actors />
       <CTA />
     </Layout>
   );
