@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const Actors = () => {
   return (
-    <section id="actors" className="py-16 bg-[#390c86] text-white">
+    <section id="actors" className="py-20 md:py-24 bg-[#390c86] text-white">
       <div className="container">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-gunterz font-bold mb-6">Actors Database</h2>
-          <div className="space-y-4 mb-8 font-montserrat text-lg leading-relaxed opacity-90">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-gunterz font-bold mb-5">Actors Database</h2>
+          <div className="space-y-4 mb-8 font-montserrat leading-relaxed text-white/85">
             <p>
               A shared space where our filmmakers can find and connect with actors for indie projects — not an audition or casting call.
             </p>
@@ -18,14 +18,14 @@ const Actors = () => {
           <Button
             asChild
             size="lg"
-            className="bg-[#f52e38] hover:bg-[#f52e38]/90 text-white font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            className="bg-[#f52e38] hover:bg-[#f52e38]/90 text-white font-gunterz font-bold rounded-md transition-colors"
           >
             <a
               href="https://forms.gle/fFTMXbxYG65brXY88"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sign Up for Our Actors Database
+              Join the Actors Database
             </a>
           </Button>
         </div>

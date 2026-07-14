@@ -13,9 +13,7 @@ const Index = () => {
   return (
     <Layout>
       <Hero />
-      <div className="bg-[#cef2e7]">
-        <Features />
-      </div>
+      <Features />
       <About />
       <Rules />
       <Apply />

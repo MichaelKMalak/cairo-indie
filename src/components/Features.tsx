@@ -1,5 +1,4 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Camera, Video, MessageSquare, Film } from "lucide-react";
 
 const features = [
@@ -27,25 +26,21 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-16 container bg-gradient-to-b from-white to-[#cef2e7]/30">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-gunterz font-bold mb-4 text-[#390c86]">Why Join Our Club</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
+    <section id="features" className="py-20 md:py-24 container">
+      <div className="text-center mb-14 max-w-2xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-gunterz font-bold mb-3 text-[#390c86]">Why Join Our Club</h2>
+        <p className="text-muted-foreground">
           Break through your creative blocks and finally make the films you've been dreaming of.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 max-w-5xl mx-auto">
         {features.map((feature, index) => (
-          <Card key={index} className="border border-[#cef2e7] transition-all hover:shadow-md bg-white">
-            <CardHeader className="pb-2">
-              <feature.icon className="h-8 w-8 mb-2 text-[#f52e38]" />
-              <CardTitle className="text-[#390c86] font-gunterz">{feature.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-foreground/80">{feature.description}</CardDescription>
-            </CardContent>
-          </Card>
+          <div key={index} className="text-left">
+            <feature.icon className="h-6 w-6 mb-4 text-[#f52e38]" strokeWidth={1.75} />
+            <h3 className="text-[#390c86] font-gunterz font-bold mb-2">{feature.title}</h3>
+            <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+          </div>
         ))}
       </div>
     </section>

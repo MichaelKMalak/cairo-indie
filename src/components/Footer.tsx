@@ -12,11 +12,13 @@ const Footer = () => {
             />
             <span className="text-xl font-gunterz font-bold tracking-tight">CIFC</span>
           </div>
-          <div className="flex gap-6">
-            <a href="#about" className="hover:text-[#cef2e7] transition">About</a>
-            <a href="#features" className="hover:text-[#cef2e7] transition">Challenge</a>
-            <a href="#rules" className="hover:text-[#cef2e7] transition">Rules</a>
-            <a href="#apply" className="hover:text-[#cef2e7] transition">Apply</a>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+            <a href="#about" className="text-white/80 hover:text-[#cef2e7] transition-colors">About</a>
+            <a href="#features" className="text-white/80 hover:text-[#cef2e7] transition-colors">Challenge</a>
+            <a href="#rules" className="text-white/80 hover:text-[#cef2e7] transition-colors">Rules</a>
+            <a href="#actors" className="text-white/80 hover:text-[#cef2e7] transition-colors">Actors</a>
+            <a href="#crew" className="text-white/80 hover:text-[#cef2e7] transition-colors">Crew</a>
+            <a href="#apply" className="text-white/80 hover:text-[#cef2e7] transition-colors">Apply</a>
           </div>
         </div>
         

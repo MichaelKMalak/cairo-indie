@@ -3,9 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section 
-      id="about" 
-      className="py-16 relative"
+    <section
+      id="about"
+      className="py-20 md:py-24 relative"
       style={{
         backgroundImage: `url('/images/about-bg.png')`,
         backgroundSize: 'cover',
@@ -13,16 +13,16 @@ const About = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/70"></div>
-      
+      {/* Brand-tinted dark overlay for text readability */}
+      <div className="absolute inset-0 bg-[#1a0640]/85"></div>
+
       {/* Content with relative positioning to appear above overlay */}
       <div className="relative z-10 container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div>
-            <h2 className="text-3xl font-gunterz font-bold mb-6 text-white">About Us</h2>
+            <h2 className="text-2xl md:text-3xl font-gunterz font-bold mb-6 text-white">About Us</h2>
             <p className="mb-4 text-lg text-white/90">
-              Cairo Indie FC is a club that will push you to finally make films consistently! 
+              Cairo Indie Filmmakers Club is a club that will push you to finally make films consistently! 
               We will be your "big brother" watching you and trying to bully you into making your films.
             </p>
             <ul className="space-y-3 list-disc pl-5 mb-8 text-white/90">
@@ -37,8 +37,8 @@ const About = () => {
           </div>
           
           <div>
-            <h2 className="text-3xl font-gunterz font-bold mb-6 text-[#cef2e7]">Why & Who We Are</h2>
-            <Card className="bg-black/30 border-white/20 backdrop-blur-sm">
+            <h2 className="text-2xl md:text-3xl font-gunterz font-bold mb-6 text-[#cef2e7]">Why & Who We Are</h2>
+            <Card className="bg-white/5 border-white/15 backdrop-blur-sm shadow-none">
               <CardContent className="pt-6">
                 <p className="mb-4 text-white/90">
                   "Who are we" is a big philosophical question. We're trying to create movies but we are stuck. 

@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  /* Offset anchored sections so they clear the sticky navbar (h-16 = 4rem) */
+  scroll-padding-top: 4rem;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
