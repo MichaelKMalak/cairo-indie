@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           
           <h2 className="text-xl font-gunterz mb-6 text-[#390c86] md:text-2xl font-bold">
-            Make One Film / Month Commitment Challenge
+            Make One Film / Sprint Commitment Challenge
           </h2>
           <p className="text-xl mb-10 leading-relaxed text-slate-100 font-montserrat">
             We're the only club that will help you commit and finally make short indie films.

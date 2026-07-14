@@ -4,8 +4,8 @@ import { Camera, Video, MessageSquare, Film } from "lucide-react";
 
 const features = [
   {
-    title: "Monthly Creation",
-    description: "Create one short film every month with feedback and support from fellow filmmakers.",
+    title: "Sprint Creation",
+    description: "Create one short film every sprint with feedback and support from fellow filmmakers.",
     icon: Camera,
   },
   {

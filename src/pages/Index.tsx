@@ -6,6 +6,7 @@ import About from "../components/About";
 import Rules from "../components/Rules";
 import Apply from "../components/Apply";
 import Actors from "../components/Actors";
+import Crew from "../components/Crew";
 import CTA from "../components/CTA";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <Rules />
       <Apply />
       <Actors />
+      <Crew />
       <CTA />
     </Layout>
   );

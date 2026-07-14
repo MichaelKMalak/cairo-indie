@@ -1,18 +1,18 @@
 
 import { Button } from "@/components/ui/button";
 
-const Actors = () => {
+const Crew = () => {
   return (
-    <section id="actors" className="py-16 bg-[#390c86] text-white">
+    <section id="crew" className="py-16 bg-[#cef2e7] text-[#390c86]">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-gunterz font-bold mb-6">Actors Database</h2>
+          <h2 className="text-3xl font-gunterz font-bold mb-6">Crew Database</h2>
           <div className="space-y-4 mb-8 font-montserrat text-lg leading-relaxed opacity-90">
             <p>
-              A shared space where our filmmakers can find and connect with actors for indie projects — not an audition or casting call.
+              A shared space where our filmmakers can find and connect with crew — DPs, editors, sound, gaffers, and more — for indie projects.
             </p>
             <p>
-              You may be contacted when a project matches your interests. Projects may be unpaid, paid, or experimental.
+              You may be contacted when a project matches your skills. Projects may be unpaid, paid, or experimental.
             </p>
           </div>
           <Button
@@ -21,11 +21,11 @@ const Actors = () => {
             className="bg-[#f52e38] hover:bg-[#f52e38]/90 text-white font-gunterz font-bold rounded-md text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
           >
             <a
-              href="https://forms.gle/fFTMXbxYG65brXY88"
+              href="https://forms.gle/a7jBfNZzgkZdXi6Z9"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sign Up for Our Actors Database
+              Sign Up for Our Crew Database
             </a>
           </Button>
         </div>
@@ -34,4 +34,4 @@ const Actors = () => {
   );
 };
 
-export default Actors;
+export default Crew;

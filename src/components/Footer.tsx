@@ -47,7 +47,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-medium mb-3 text-[#cef2e7] font-gunterz">Join Us</h3>
             <p className="text-white/80 text-sm">
-              Monthly meetups in Cairo.
+              Screenings every sprint in Cairo.
               <br />
               Weekly online check-ins.
             </p>

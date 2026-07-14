@@ -21,7 +21,7 @@ const Rules = () => {
           <Alert className="border-l-4 border-l-[#f52e38]">
             <AlertTitle className="text-[#390c86] font-gunterz">Rule #2</AlertTitle>
             <AlertDescription>
-              1 offline monthly meetup to judge people's hard work and let them judge you. 2 strikes and you're out.
+              1 offline screening every sprint to judge people's hard work and let them judge you. 2 strikes and you're out.
             </AlertDescription>
           </Alert>
           
@@ -36,7 +36,7 @@ const Rules = () => {
             <AlertTitle className="text-[#390c86] font-gunterz">Rule #4</AlertTitle>
             <AlertDescription>
               You need to submit something! That's the whole purpose of all of this, you know?
-              1 short film per month. If more than 10 minutes, the deadline could be extended.
+              1 short film per sprint. If more than 10 minutes, the deadline could be extended.
             </AlertDescription>
           </Alert>
           

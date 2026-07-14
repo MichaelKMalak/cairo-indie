@@ -26,13 +26,13 @@ const About = () => {
               We will be your "big brother" watching you and trying to bully you into making your films.
             </p>
             <ul className="space-y-3 list-disc pl-5 mb-8 text-white/90">
-              <li>Participants have to create ONE film per month*</li>
+              <li>Participants have to create ONE film per sprint*</li>
               <li>You will join a weekly standup online meeting to inform us of your progress</li>
-              <li>You will join a monthly offline meeting to judge other submissions and let others judge you (constructively)</li>
+              <li>You will join an offline screening every sprint to judge other submissions and let others judge you (constructively)</li>
               <li>The challenge is to create a film with whatever tools/resources you have</li>
             </ul>
             <p className="text-sm italic text-white/70">
-              (*) Longer films that are over 15 minutes can take more than a month.
+              (*) Longer films that are over 15 minutes can take more than a sprint.
             </p>
           </div>
           
