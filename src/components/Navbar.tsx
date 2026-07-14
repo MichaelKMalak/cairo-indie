@@ -17,10 +17,13 @@ const Navbar = () => {
         <button
           onClick={() => scrollTo("hero")}
           className="flex items-center"
+          aria-label="Cairo Indie Filmmakers Club home"
         >
-          <span className="text-lg font-gunterz font-bold tracking-tight text-[#390c86]">
-            CIFC
-          </span>
+          <img
+            src="/images/CIFC-Logo.png"
+            alt="Cairo Indie Filmmakers Club Logo"
+            className="h-8 w-auto"
+          />
         </button>
 
         <div className="hidden md:flex items-center gap-1">
